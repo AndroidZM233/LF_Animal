@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ll_main"
+    android:orientation="vertical" >
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/SCROLLER_ID"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="361dp"-->
+        <!--android:layout_marginTop="20dip"-->
+        <!--android:fillViewport="true"-->
+        <!--android:scrollbars="vertical" >-->
+
+        <!---->
+    <!--</ScrollView>-->
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/bg_alibuybutton"
+            android:id="@+id/tv_content"
+            android:layout_width="200dp"
+            android:textColor="#1b1a1a"
+            android:layout_height="wrap_content"
+            android:text="@string/StrNull"/>
+
+        <ToggleButton
+            android:textOn="关闭扫描"
+            android:textOff="开启扫描"
+            android:id="@+id/toggleButton_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_information"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="年审日期："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#1e1d1d"
+            android:gravity="center"
+            android:id="@+id/tv_nianshen"
+            android:background="@drawable/bg_alibuybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="免疫日期："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#1e1d1d"
+            android:gravity="center"
+            android:id="@+id/tv_nianyi"
+            android:singleLine="true"
+            android:background="@drawable/bg_alibuybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="地区代码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#1e1d1d"
+            android:gravity="center"
+            android:id="@+id/et_difangxinxi"
+            android:background="@drawable/bg_alibuybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_no_information"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="点击开始扫描进行查询"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_dengji"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:text="登记" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:text="修改" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_close"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:text="@string/BtnStr_Close" />
+
+    </LinearLayout>
+
+</LinearLayout>
